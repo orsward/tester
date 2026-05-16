@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEO-First AI Music Catalog Dashboard</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #121a33;
+      --panel-2: #1a2547;
+      --text: #e9eefc;
+      --muted: #9fb0da;
+      --accent: #7ed0ff;
+      --accent-2: #9ff5cf;
+      --border: #2d3b67;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(circle at top, #132246, var(--bg));
+      color: var(--text);
+      line-height: 1.45;
+    }
+    .container { width: min(1200px, 92vw); margin: 2rem auto 3rem; }
+    .hero, .panel { background: linear-gradient(180deg, var(--panel), var(--panel-2)); border: 1px solid var(--border); border-radius: 16px; padding: 1.2rem 1.4rem; }
+    h1, h2, h3 { margin: .2rem 0 .7rem; }
+    h1 { font-size: clamp(1.4rem, 2.8vw, 2rem); }
+    h2 { font-size: 1.2rem; color: var(--accent); }
+    .muted { color: var(--muted); }
+    .grid { display: grid; gap: 1rem; }
+    .kpi { grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); }
+    .kpi .panel { padding: .9rem 1rem; }
+    .kpi b { font-size: 1.3rem; display: block; }
+    .niches { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .niche-card { padding: 1rem; border: 1px solid var(--border); border-radius: 12px; background: #121b36; }
+    .chip { display: inline-block; background: #253863; border: 1px solid #37548f; border-radius: 999px; padding: .18rem .58rem; margin: .15rem .2rem 0 0; font-size: .8rem; }
+    details { margin-top: .55rem; }
+    details summary { cursor: pointer; color: var(--accent-2); }
+    code { color: #c5f5ff; background: #1c294c; padding: .08rem .28rem; border-radius: 6px; }
+    ol { padding-left: 1.1rem; }
+    .small { font-size: .9rem; }
+    a { color: #9dd5ff; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <h1>SEO-First AI Music Catalog Dashboard</h1>
+      <p class="muted">Low-competition niche strategy for YouTube + Spotify using structured Suno-style prompts, reusable metadata patterns, and release controls.</p>
+      <p><b>Universal Suno Formula:</b> <code>genre, subgenre, mood, instruments, tempo, production texture, vocal type, song purpose</code></p>
+    </section>
+
+    <section class="grid kpi" style="margin-top:1rem;">
+      <article class="panel"><b>10</b><span class="muted">Niches</span></article>
+      <article class="panel"><b>20</b><span class="muted">Track titles / niche</span></article>
+      <article class="panel"><b>200</b><span class="muted">Total title ideas</span></article>
+      <article class="panel"><b>2</b><span class="muted">Primary platforms (YT + Spotify)</span></article>
+    </section>
+
+    <section class="panel" style="margin-top:1rem;">
+      <h2>Niche Map</h2>
+      <div class="grid niches">
+        <article class="niche-card"><h3>1) Ambient meditation drones</h3><p class="small">High repeat play, sleep/wellness use cases.</p><span class="chip">sleep music</span><span class="chip">deep rest</span><span class="chip">breathwork</span><p><b>Prompt:</b> ambient drone, serene, warm pads, soft piano, 60 bpm, spacious reverb, no drums/no lead vocal.</p><p><b>Example title:</b> Drift Into Stillness</p></article>
+        <article class="niche-card"><h3>2) Lo-fi study jazz</h3><p class="small">Evergreen study/focus playlist demand.</p><span class="chip">study beats</span><span class="chip">focus jazz</span><span class="chip">coffee shop</span><p><b>Prompt:</b> lo-fi jazz, dusty piano, brushed drums, upright bass, vinyl crackle, 78 bpm.</p><p><b>Example title:</b> Quiet Deadline</p></article>
+        <article class="niche-card"><h3>3) Synthwave driving</h3><p class="small">Gaming + trailer licensing appeal.</p><span class="chip">retro drive</span><span class="chip">neon night</span><span class="chip">cyber city</span><p><b>Prompt:</b> synthwave, pulsing arps, analog synths, gated drums, 100 bpm.</p><p><b>Example title:</b> Neon Highway</p></article>
+        <article class="niche-card"><h3>4) Nordic folk ambient</h3><p class="small">Distinctive underused search space.</p><span class="chip">winter folk</span><span class="chip">mythic acoustic</span><span class="chip">forest ritual</span><p><b>Prompt:</b> Nordic folk, nyckelharpa, frame drums, soft flute, 72 bpm.</p><p><b>Example title:</b> Winter Path</p></article>
+        <article class="niche-card"><h3>5) Cinematic tension beds</h3><p class="small">Creator/editor utility for suspense scenes.</p><span class="chip">doc underscore</span><span class="chip">trailer pulse</span><p><b>Prompt:</b> cinematic tension, low strings, ticking percussion, sub drones, 90 bpm, no vocals.</p><p><b>Example title:</b> Quiet Countdown</p></article>
+        <article class="niche-card"><h3>6) Tropical acoustic chill</h3><p class="small">Travel/hospitality/vlog friendly.</p><span class="chip">island sunset</span><span class="chip">beach lounge</span><p><b>Prompt:</b> tropical acoustic, guitar, light percussion, steel pan accents, 92 bpm.</p><p><b>Example title:</b> Sunset Porch</p></article>
+        <article class="niche-card"><h3>7) Neo-soul late-night groove</h3><p class="small">Evergreen mood listening.</p><span class="chip">midnight soul</span><span class="chip">smooth groove</span><p><b>Prompt:</b> neo-soul, Rhodes, smooth bass, brushed drums, 84 bpm.</p><p><b>Example title:</b> Velvet Hour</p></article>
+        <article class="niche-card"><h3>8) Minimal piano reflection</h3><p class="small">Strong emotional/search use cases.</p><span class="chip">sad piano</span><span class="chip">soft introspection</span><p><b>Prompt:</b> minimal piano, solo keys, soft pads, 68 bpm, intimate instrumental.</p><p><b>Example title:</b> Open Window</p></article>
+        <article class="niche-card"><h3>9) Afro-fusion instrumental</h3><p class="small">Cross-cultural playlist + sync potential.</p><span class="chip">afro rhythm</span><span class="chip">global percussion</span><p><b>Prompt:</b> afro-fusion, hand drums, kalimba, shakers, 102 bpm, celebratory.</p><p><b>Example title:</b> Market Sunrise</p></article>
+        <article class="niche-card"><h3>10) Game-loop chiptune</h3><p class="small">Indie game + nostalgia audience.</p><span class="chip">8-bit adventure</span><span class="chip">pixel quest</span><p><b>Prompt:</b> chiptune, square wave lead, retro drums, 140 bpm, loopable.</p><p><b>Example title:</b> Pixel Quest</p></article>
+      </div>
+    </section>
+
+    <section class="panel" style="margin-top:1rem;">
+      <h2>Reusable Pack Structure</h2>
+      <ul>
+        <li>20 track titles per niche.</li>
+        <li>One short repeatable chorus hook.</li>
+        <li>Lyrics template using <code>[Verse]</code>/<code>[Chorus]</code> tags.</li>
+        <li>Single structured Suno style prompt.</li>
+        <li>YouTube + Spotify metadata fields and artwork prompt.</li>
+      </ul>
+      <details>
+        <summary>Sample compliance checklist</summary>
+        <ul>
+          <li>Use unique ISRC per track.</li>
+          <li>Keep metadata consistent but not generic/repetitive.</li>
+          <li>Disclose synthetic/AI-generated content on YouTube where required.</li>
+          <li>Vary covers, durations, and descriptions across releases.</li>
+        </ul>
+      </details>
+    </section>
+
+    <section class="panel" style="margin-top:1rem;">
+      <h2>Production Workflow</h2>
+      <ol>
+        <li>Pick one niche per release cycle.</li>
+        <li>Generate 20 tracks with a shared sonic identity.</li>
+        <li>Use unique titles, artwork, and descriptions.</li>
+        <li>Keep chorus simple and brandable.</li>
+        <li>Export track-level metadata + unique ISRCs.</li>
+        <li>Upload in small waves.</li>
+        <li>Track performance by niche, title pattern, and playlist fit.</li>
+      </ol>
+    </section>
+  </div>
+</body>
+</html>
